@@ -24,6 +24,7 @@ PRODUCT_COPY_FILES += \
     vendor/archos/ac50fnev2/proprietary/etc/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
     vendor/archos/ac50fnev2/proprietary/lib/libfs_mgr.so:system/lib/libfs_mgr.so \
     vendor/archos/ac50fnev2/proprietary/lib/libstagefright.so:system/lib/libstagefright.so \
+    vendor/archos/ac50fnev2/proprietary/vendor/bin/MtkCodecService:system/vendor/bin/MtkCodecService \
     vendor/archos/ac50fnev2/proprietary/vendor/bin/akmd09911:system/vendor/bin/akmd09911 \
     vendor/archos/ac50fnev2/proprietary/vendor/bin/akmd8963:system/vendor/bin/akmd8963 \
     vendor/archos/ac50fnev2/proprietary/vendor/bin/akmd8975:system/vendor/bin/akmd8975 \
@@ -70,6 +71,7 @@ PRODUCT_COPY_FILES += \
     vendor/archos/ac50fnev2/proprietary/vendor/etc/audio_param/AudioParamOptions.xml:system/vendor/etc/audio_param/AudioParamOptions.xml \
     vendor/archos/ac50fnev2/proprietary/vendor/etc/audio_policy.conf:system/vendor/etc/audio_policy.conf \
     vendor/archos/ac50fnev2/proprietary/vendor/etc/ecc_list.xml:system/vendor/etc/ecc_list.xml \
+    vendor/archos/ac50fnev2/proprietary/vendor/etc/mtk_omx_core.cfg:system/vendor/etc/mtk_omx_core.cfg \
     vendor/archos/ac50fnev2/proprietary/vendor/etc/slp_conf:system/vendor/etc/slp_conf \
     vendor/archos/ac50fnev2/proprietary/vendor/firmware/ROMv2_lm_patch_1_0_hdr.bin:system/vendor/firmware/ROMv2_lm_patch_1_0_hdr.bin \
     vendor/archos/ac50fnev2/proprietary/vendor/firmware/ROMv2_lm_patch_1_1_hdr.bin:system/vendor/firmware/ROMv2_lm_patch_1_1_hdr.bin \
@@ -94,7 +96,23 @@ PRODUCT_COPY_FILES += \
     vendor/archos/ac50fnev2/proprietary/vendor/lib/hw/radio.fm.mt6580.so:system/vendor/lib/hw/radio.fm.mt6580.so \
     vendor/archos/ac50fnev2/proprietary/vendor/lib/hw/sensors.mt6580.so:system/vendor/lib/hw/sensors.mt6580.so \
     vendor/archos/ac50fnev2/proprietary/vendor/lib/lib3a.so:system/vendor/lib/lib3a.so \
+    vendor/archos/ac50fnev2/proprietary/vendor/lib/libBnMtkCodec.so:system/vendor/lib/libBnMtkCodec.so \
+    vendor/archos/ac50fnev2/proprietary/vendor/lib/libClearMotionFW.so:system/vendor/lib/libClearMotionFW.so \
+    vendor/archos/ac50fnev2/proprietary/vendor/lib/libJpgDecPipe.so:system/vendor/lib/libJpgDecPipe.so \
     vendor/archos/ac50fnev2/proprietary/vendor/lib/libJpgEncPipe.so:system/vendor/lib/libJpgEncPipe.so \
+    vendor/archos/ac50fnev2/proprietary/vendor/lib/libMtkOmxAdpcmDec.so:system/vendor/lib/libMtkOmxAdpcmDec.so \
+    vendor/archos/ac50fnev2/proprietary/vendor/lib/libMtkOmxAdpcmEnc.so:system/vendor/lib/libMtkOmxAdpcmEnc.so \
+    vendor/archos/ac50fnev2/proprietary/vendor/lib/libMtkOmxApeDec.so:system/vendor/lib/libMtkOmxApeDec.so \
+    vendor/archos/ac50fnev2/proprietary/vendor/lib/libMtkOmxCore.so:system/vendor/lib/libMtkOmxCore.so \
+    vendor/archos/ac50fnev2/proprietary/vendor/lib/libMtkOmxFlacDec.so:system/vendor/lib/libMtkOmxFlacDec.so \
+    vendor/archos/ac50fnev2/proprietary/vendor/lib/libMtkOmxG711Dec.so:system/vendor/lib/libMtkOmxG711Dec.so \
+    vendor/archos/ac50fnev2/proprietary/vendor/lib/libMtkOmxGsmDec.so:system/vendor/lib/libMtkOmxGsmDec.so \
+    vendor/archos/ac50fnev2/proprietary/vendor/lib/libMtkOmxMp3Dec.so:system/vendor/lib/libMtkOmxMp3Dec.so \
+    vendor/archos/ac50fnev2/proprietary/vendor/lib/libMtkOmxRawDec.so:system/vendor/lib/libMtkOmxRawDec.so \
+    vendor/archos/ac50fnev2/proprietary/vendor/lib/libMtkOmxVdecEx.so:system/vendor/lib/libMtkOmxVdecEx.so \
+    vendor/archos/ac50fnev2/proprietary/vendor/lib/libMtkOmxVenc.so:system/vendor/lib/libMtkOmxVenc.so \
+    vendor/archos/ac50fnev2/proprietary/vendor/lib/libMtkOmxVorbisEnc.so:system/vendor/lib/libMtkOmxVorbisEnc.so \
+    vendor/archos/ac50fnev2/proprietary/vendor/lib/libSwJpgCodec.so:system/vendor/lib/libSwJpgCodec.so \
     vendor/archos/ac50fnev2/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
     vendor/archos/ac50fnev2/proprietary/vendor/lib/libaed.so:system/vendor/lib/libaed.so \
     vendor/archos/ac50fnev2/proprietary/vendor/lib/libaudiocompensationfilter.so:system/vendor/lib/libaudiocompensationfilter.so \
@@ -161,6 +179,7 @@ PRODUCT_COPY_FILES += \
     vendor/archos/ac50fnev2/proprietary/vendor/lib/libm4u.so:system/vendor/lib/libm4u.so \
     vendor/archos/ac50fnev2/proprietary/vendor/lib/libmal.so:system/vendor/lib/libmal.so \
     vendor/archos/ac50fnev2/proprietary/vendor/lib/libmdfx.so:system/vendor/lib/libmdfx.so \
+    vendor/archos/ac50fnev2/proprietary/vendor/lib/libmhalImageCodec.so:system/vendor/lib/libmhalImageCodec.so \
     vendor/archos/ac50fnev2/proprietary/vendor/lib/libmnl.so:system/vendor/lib/libmnl.so \
     vendor/archos/ac50fnev2/proprietary/vendor/lib/libmrdump.so:system/vendor/lib/libmrdump.so \
     vendor/archos/ac50fnev2/proprietary/vendor/lib/libmsbc_mtk.so:system/vendor/lib/libmsbc_mtk.so \
@@ -185,6 +204,7 @@ PRODUCT_COPY_FILES += \
     vendor/archos/ac50fnev2/proprietary/vendor/lib/librilmtkmd2.so:system/vendor/lib/librilmtkmd2.so \
     vendor/archos/ac50fnev2/proprietary/vendor/lib/librilproxy.so:system/vendor/lib/librilproxy.so \
     vendor/archos/ac50fnev2/proprietary/vendor/lib/librilproxyutils.so:system/vendor/lib/librilproxyutils.so \
+    vendor/archos/ac50fnev2/proprietary/vendor/lib/librrc.so:system/vendor/lib/librrc.so \
     vendor/archos/ac50fnev2/proprietary/vendor/lib/libspeech_enh_lib.so:system/vendor/lib/libspeech_enh_lib.so \
     vendor/archos/ac50fnev2/proprietary/vendor/lib/libstorage_otp.so:system/vendor/lib/libstorage_otp.so \
     vendor/archos/ac50fnev2/proprietary/vendor/lib/libterservice.so:system/vendor/lib/libterservice.so \
