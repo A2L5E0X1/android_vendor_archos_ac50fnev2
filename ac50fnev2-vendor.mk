@@ -23,6 +23,7 @@ PRODUCT_COPY_FILES += \
     vendor/archos/ac50fnev2/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
     vendor/archos/ac50fnev2/proprietary/etc/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
     vendor/archos/ac50fnev2/proprietary/lib/libfs_mgr.so:system/lib/libfs_mgr.so \
+    vendor/archos/ac50fnev2/proprietary/lib/libstagefright.so:system/lib/libstagefright.so \
     vendor/archos/ac50fnev2/proprietary/vendor/bin/akmd09911:system/vendor/bin/akmd09911 \
     vendor/archos/ac50fnev2/proprietary/vendor/bin/akmd8963:system/vendor/bin/akmd8963 \
     vendor/archos/ac50fnev2/proprietary/vendor/bin/akmd8975:system/vendor/bin/akmd8975 \
